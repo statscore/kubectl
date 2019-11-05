@@ -1,4 +1,4 @@
-FROM debian:buster
+FROM debian:buster-slim
 
 RUN set -x \
     && apt update && apt-get install -y --no-install-recommends --no-install-suggests curl ca-certificates \
