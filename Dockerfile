@@ -8,6 +8,6 @@ RUN set -x \
 FROM ubuntu:bionic
 
 RUN set -x \
-    && apt update && apt-get install -y --no-install-recommends --no-install-suggests jq bc
+    && apt update && apt-get install -y --no-install-recommends --no-install-suggests jq bc curl
 
 COPY --from=base /usr/local/bin/kubectl /usr/local/bin/kubectl
